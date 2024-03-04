@@ -1,7 +1,8 @@
 import React, {Suspense} from "react";
-import {Canvas} from "@react-three/fiber";
+import {Canvas, useLoader} from "@react-three/fiber";
 import "./style.css";
 import {OrbitControls, PerspectiveCamera} from "@react-three/drei";
+import {TextureLoader} from "three";
 
 function CarShow() {
   return (
@@ -27,11 +28,6 @@ function CarShow() {
         castShadow
         shadow-bias={-0.0001}
       />
-
-      {/* <mesh>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshBasicMaterial color={"orange"} />
-      </mesh> */}
     </>
   );
 }
