@@ -2,7 +2,7 @@ import React, {Suspense} from "react";
 import {Canvas, useLoader} from "@react-three/fiber";
 import "./style.css";
 import {OrbitControls, PerspectiveCamera} from "@react-three/drei";
-import {Ground} from "./components/ground";
+import {Ground} from "./ground";
 
 function CarShow() {
   return (
